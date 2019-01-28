@@ -9,5 +9,6 @@
 * Packer
 * Docker
 * Python
+* Kubectl
 
 # This scripts need more improvement. You can contribute to make it more efficient.
