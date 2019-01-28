@@ -8,7 +8,9 @@
 * Ansible
 * Packer
 * Docker
-* Python
+* Python3X
 * Kubectl
+* Python 2.7
+
 
 # This scripts need more improvement. You can contribute to make it more efficient.
