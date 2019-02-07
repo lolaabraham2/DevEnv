@@ -48,7 +48,26 @@ sudo apt-get update && sudo apt-get install -y apt-transport-https
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install software-properties-common
 sudo apt-get install -y kubectl
+
+# Install net-tools
+sudo apt-get install net-tools
+sudo apt-get install nmap
+
+# Install Scanning & Monitoring Tools
+sudo apt-get install lynis -y
+sudo apt-get install iotop -y
+sudo apt-get install htop*
+sudo apt-get install sysstat -y
+
+# Color
+sudo apt-get install ccze
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt-get update
+sudo apt-get install neofetch
+sudo apt-get install sysvbanner
 
 # clean up
 apt-get clean
