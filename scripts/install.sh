@@ -75,6 +75,8 @@ sudo apt-get update
 sudo apt-get install neofetch
 sudo apt-get install sysvbanner
 sudo apt-get install linuxlogo
+
+# Install Python3 and Boto
 sudo apt-get install python3-pip -y
 sudo python -m pip install boto3
 sudo pip install --upgrade pip
@@ -169,6 +171,60 @@ sudo apt-get install nixops*
 sudo apt-get install disnix
 sudo apt-get install consul
 sudo apt-get install nodejs
+
+# Java Installation
+sudo apt-get install default-jdk
+sudo apt-get install default-jre
+sudo apt-get install openjdk-11-jdk
+sudo apt-get install openjdk-8-jdk
+sudo apt-get install openjdk-9-jdk
+
+# Installing the Oracle JDK
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+
+# Download Python 2.7
+sudo apt-get update
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
+sudo tar xzf Python-2.7.15.tgz
+cd Python-2.7.15
+sudo ./configure --enable-optimizations
+sudo make altinstall
+
+# Install Python 3.7.2
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev \libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+sudo tar xzf Python-3.7.2.tgz
+cd Python-3.7.2
+sudo ./configure --enable-optimizations
+sudo make altinstall
+
+# Install virtualenv and virtualenvwrapper 
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install virtualenv virtualenvwrapper
+sudo pip install --upgrade pip
+
+# Create a backup of your .bashrc file
+cp ~/.bashrc ~/.bashrc-org
+
+# Be careful with this command
+printf '\n%s\n%s\n%s' '# virtualenv' 'export WORKON_HOME=~/virtualenvs' \'source /usr/local/bin/virtualenvwrapper.sh' >> ~/.bashrc
+
+# Enable the virtual environment
+source ~/.bashrc
+mkdir -p $WORKON_HOME
+mkvirtualenv api
+
+# Exit the 'api' virtual environment
+deactivate
 
 # clean up
 sudo apt-get clean
