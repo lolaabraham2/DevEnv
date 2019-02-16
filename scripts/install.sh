@@ -81,10 +81,10 @@ sudo apt-get -y install python3-pip -y
 sudo python -m pip install boto3
 sudo pip install --upgrade pip
 
-# Install Ansible repository.
+# Install Ansible repository and upgrade the distro.
 sudo apt-get -y install software-properties-common
 sudo apt-get -y install update-manager-core
-do-release-upgrade -d
+sudo apt-get -y do-release-upgrade -d
 
 # Install necessary libraries for guest additions and Vagrant NFS Share
 sudo apt-get -y -q install linux-headers-$(uname -r) build-essential dkms nfs-common
