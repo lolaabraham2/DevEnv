@@ -1,5 +1,5 @@
 Vagrant.configure(2) do |config|
-	config.vm.define "devops-box" do |devbox|
+	config.vm.define "automation-King" do |Automation|
 		devbox.vm.box = "ubuntu/xenial64"
     		devbox.vm.network "private_network", ip: "192.168.33.50"
     		#devbox.vm.network "public_network", bridge: "wlo1"
