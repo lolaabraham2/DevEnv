@@ -208,6 +208,8 @@ sudo ./configure --enable-optimizations
 sudo make altinstall
 
 # Install virtualenv and virtualenvwrapper 
+sudo apt-get -y update
+$ sudo apt-get -y install python-pip
 sudo apt-get -y install python-pip python-dev build-essential
 sudo pip -y install virtualenv virtualenvwrapper
 sudo pip -y install --upgrade pip
