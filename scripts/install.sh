@@ -94,20 +94,6 @@ sudo apt-get -y install sysstat -y
 # Install CLI tools
 sudo apt-get -y install binutils*
 
-# Java Installation
-sudo apt-get -y install default-jdk
-sudo apt-get -y install default-jre
-sudo apt-get -y install openjdk-11-jdk
-sudo apt-get -y install openjdk-8-jdk
-sudo apt-get -y install openjdk-9-jdk
-
-# Installing the Oracle JDK
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get -y update
-sudo apt-get -y install oracle-java8-installer
-sudo update-alternatives --config java && ok
-sudo update-alternatives --config javac && ok
-
 # Download Python 2.7
 sudo apt-get -y install build-essential checkinstall
 sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
@@ -129,10 +115,10 @@ sudo ./configure --enable-optimizations
 sudo make altinstall
 
 # Install virtualenv and virtualenvwrapper 
-$ sudo apt-get -y install python-pip
-sudo apt-get -y install python-pip python-dev build-essential
-sudo pip -y install virtualenv virtualenvwrapper
-sudo pip -y install --upgrade pip
+$ sudo apt-get install python-pip
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install virtualenv virtualenvwrapper
+sudo pip install --upgrade pip
 
 # clean up
 sudo apt-get clean
