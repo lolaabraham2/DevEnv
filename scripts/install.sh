@@ -52,9 +52,8 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install software-properties-common
 sudo apt-get -y install -y kubectl
-
-# Upgrade the Distro from xenial16.4 to bionic 18.04 
-sudo apt-get -y update && sudo apt-get -y dist-upgrade
+sudo apt update && sudo apt dist-upgrade
+sudo apt-get -y install update-manager-core
 
 # Install net-tools
 sudo apt-get -y install net-tools
@@ -66,7 +65,6 @@ sudo apt-get install lynis -y
 # Color
 sudo apt-get -y install ccze
 sudo add-apt-repository ppa:dawidd0811/neofetch
-sudo apt-get update
 sudo apt-get -y install neofetch
 sudo apt-get -y install sysvbanner
 sudo apt-get -y install linuxlogo
@@ -76,49 +74,17 @@ sudo apt-get -y install python3-pip -y
 sudo python -m pip install boto3
 sudo pip install --upgrade pip
 
-# Install Ansible repository and upgrade the distro.
-sudo apt-get -y install software-properties-common
-sudo apt update && sudo apt dist-upgrade
-sudo apt-get -y install update-manager-core
-
-
 # Install necessary libraries for guest additions and Vagrant NFS Share
 sudo apt-get -y -q install linux-headers-$(uname -r) build-essential dkms nfs-common
 
 # Using APT you can install the tools with the following RPM packages
 sudo apt-get -y install lsof*
-sudo apt-get -y install iotop -y
+sudo apt-get -y install iotop*
 sudo apt-get -y install htop*
-sudo apt-get -y install sysstat -y
+sudo apt-get -y install sysstat
 
 # Install CLI tools
 sudo apt-get -y install binutils*
-
-# Download Python 2.7
-sudo apt-get -y install build-essential checkinstall
-sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-cd /usr/src
-sudo wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz
-sudo tar xzf Python-2.7.15.tgz
-cd Python-2.7.15
-sudo ./configure --enable-optimizations
-sudo make altinstall
-
-# Install Python 3.7.2
-sudo apt-get -y install build-essential checkinstall
-sudo apt-get -y install libreadline-gplv2-dev libncursesw5-dev libssl-dev \libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
-cd /usr/src
-sudo wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-sudo tar xzf Python-3.7.2.tgz
-cd Python-3.7.2
-sudo ./configure --enable-optimizations
-sudo make altinstall
-
-# Install virtualenv and virtualenvwrapper 
-$ sudo apt-get install python-pip
-sudo apt-get install python-pip python-dev build-essential
-sudo pip install virtualenv virtualenvwrapper
-sudo pip install --upgrade pip
 
 # clean up
 sudo apt-get clean
