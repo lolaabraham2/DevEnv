@@ -88,3 +88,23 @@ sudo apt-get -y install binutils*
 
 # clean up
 sudo apt-get clean
+sudo echo "_______________________________"
+sudo echo "|                             |"
+sudo echo "|   Welcome to Valaxy Demo    |"
+sudo echo "|           _nnnn_            |"
+sudo echo "|          dGGGGMMb           |"
+sudo echo "|         @p~qp~~qMb          |"
+sudo echo "|         M|@||@) M|          |"
+sudo echo "|         @,----.JM|          |"
+sudo echo "|        JS^\__/  qKL         |"
+sudo echo "|       dZP        qKRb       |"
+sudo echo "|      dZP          qKKb      |"
+sudo echo "|     fZP            SMMb     |"
+sudo echo "|     HZM            MMMM     |"
+sudo echo "|     FqM            MMMM     |"
+sudo echo "|   __| '.        |\dS'qML    |"
+sudo echo "|   |    '.       | ' \Zq     |"
+sudo echo "|  _)      \.___.,|     .'    |"
+sudo echo "|  \____   )MMMMMP|   .'      |"
+sudo echo "|       '-'       '--' hjm    |"
+sudo echo "_______________________________"
