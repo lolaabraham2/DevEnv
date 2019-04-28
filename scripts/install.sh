@@ -88,9 +88,6 @@ sudo python -m pip install boto3
 sudo pip install --upgrade pip
 sudo apt-get install toilet -y
 
-# Install necessary libraries for guest additions and Vagrant NFS Share
-sudo apt-get -y -q install linux-headers-$(uname -r) build-essential dkms nfs-common
-
 # Using APT you can install the tools with the following RPM packages
 sudo apt-get -y install lsof*
 sudo apt-get -y install iotop*
