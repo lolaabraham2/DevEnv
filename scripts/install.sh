@@ -25,10 +25,6 @@ if [[ $? == 127 ]]; then
     python3 get-pip.py
 fi
 
-# install awscli and ebcli
-sudo pip3 install awscli --upgrade --user
-sudo pip install awsebcli --upgrade --user
-
 # Install necessary dependencies
 sudo apt-get -y -q install curl wget git tmux vim
 sudo apt-get -y install zsh
@@ -81,6 +77,10 @@ sudo apt-get -y install linuxlogo
 sudo apt-get -y install python3-pip -y
 sudo python -m pip install boto3
 sudo pip install --upgrade pip
+
+# install awscli and ebcli
+sudo pip3 install awscli --upgrade --user
+sudo pip3 install awsebcli --upgrade --user
 
 # Using APT you can install the tools with the following RPM packages
 sudo apt-get -y install lsof*
