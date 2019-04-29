@@ -26,8 +26,8 @@ if [[ $? == 127 ]]; then
 fi
 
 # install awscli and ebcli
-sudo pip install -U awscli
-sudo pip install -U awsebcli
+sudo pip3 install awscli --upgrade --user
+sudo pip install awsebcli --upgrade --user
 
 # Install necessary dependencies
 sudo apt-get -y -q install curl wget git tmux vim
@@ -87,7 +87,8 @@ sudo apt-get -y install lsof*
 sudo apt-get -y install iotop*
 sudo apt-get -y install htop*
 sudo apt-get -y install sysstat
-sudo apt-get -y install toilet figlet
+sudo apt-get -y install toilet && sudo apt-get -y install figlet
+sudo apt-get -y install tree
 sudo apt-get -y update && sudo apt-get upgrade
 
 # clean up
