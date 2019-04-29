@@ -55,7 +55,7 @@ P_RETVAL=$?
 sudo apt-get update
 sudo apt-get install software-properties-common
 sudo apt-add-repository --yes --update ppa:ansible/ansible
-udo apt-get install ansible
+sudo apt-get install ansible
 
 # Install Kubernetes Kubctl
 sudo apt-get update && sudo apt-get install -y apt-transport-https
