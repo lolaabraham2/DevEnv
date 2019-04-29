@@ -9,7 +9,9 @@
 * Docker
 * Python3X
 * Kubectl
-* Python 2.7
+* Python 2 X
+* Pythoon3X
+* Botocore
 * Development tools
 * CLI tools
 * VirtualEnvironment
