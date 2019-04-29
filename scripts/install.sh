@@ -89,6 +89,7 @@ sudo apt-get -y install htop*
 sudo apt-get -y install sysstat
 sudo apt-get -y install toilet figlet
 sudo apt-get -y update && sudo apt-get upgrade
+
 # clean up
 sudo apt-get clean
 sudo echo 'echo "ROME WELCOME YOU TO THE WORLD OF DEVOPS"' >> ~/.bashrc
