@@ -61,8 +61,7 @@ udo apt-get install ansible
 sudo apt-get update && sudo apt-get install -y apt-transport-https
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt-get -y update && sudo apt-get upgrade
 sudo apt-get -y install software-properties-common
 sudo apt-get -y install -y kubectl
 sudo apt update && sudo apt dist-upgrade
@@ -72,11 +71,7 @@ sudo apt-get -y install update-manager-core
 sudo apt-get -y install net-tools
 sudo apt-get -y install nmap
 
-# Install Scanning & Monitoring Tools
-sudo apt-get install lynis -y
-
 # Other Linux Fancy Stuff
-sudo apt-get -y install ccze
 sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt-get -y install neofetch
 sudo apt-get -y install sysvbanner
@@ -86,7 +81,6 @@ sudo apt-get -y install linuxlogo
 sudo apt-get -y install python3-pip -y
 sudo python -m pip install boto3
 sudo pip install --upgrade pip
-sudo apt-get install toilet -y
 
 # Using APT you can install the tools with the following RPM packages
 sudo apt-get -y install lsof*
@@ -94,31 +88,8 @@ sudo apt-get -y install iotop*
 sudo apt-get -y install htop*
 sudo apt-get -y install sysstat
 
-# Install CLI tools
-sudo apt-get -y install binutils*
-
 # clean up
 sudo apt-get clean
-
-# The Linux Man
-sudo echo "_______________________________"
-sudo echo "|                             |"
-sudo echo "|   Welcome to ROME Demo      |"
-sudo echo "|           _nnnn_            |"
-sudo echo "|          dGGGGMMb           |"
-sudo echo "|         @p~qp~~qMb          |"
-sudo echo "|         M|@||@) M|          |"
-sudo echo "|         @,----.JM|          |"
-sudo echo "|        JS^\__/  qKL         |"
-sudo echo "|       dZP        qKRb       |"
-sudo echo "|      dZP          qKKb      |"
-sudo echo "|     fZP   LINUX    SMMb     |"
-sudo echo "|     HZM            MMMM     |"
-sudo echo "|     FqM            MMMM     |"
-sudo echo "|   __| '.        |\dS'qML    |"
-sudo echo "|   |    '.       | ' \Zq     |"
-sudo echo "|  _)      \.___.,|     .'    |"
-sudo echo "|  \____   )MMMMMP|   .'      |"
-sudo echo "|       '-'       '--' hjm    |"
-sudo echo "_______________________________"
+sudo apt-get -y install toilet figlet
+sudo echo 'echo "WELCOME ROME"' >> ~/.bashrc
 
