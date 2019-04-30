@@ -2,7 +2,7 @@
 * A vagrant project with an ubuntu box with the tools needed to do DevOps
 
 # tools included
-* Terraform
+* Terraform 11.11
 * AWS CLI
 * Ansible
 * Packer
@@ -10,7 +10,6 @@
 * Python3X
 * Kubectl
 * Python 2 X
-* Python3X
 * Botocore
 * Development tools
 * CLI tool
@@ -21,6 +20,7 @@
 * pip3
 * curl
 * wget
+OS = Ubuntu 18
 
 
 # This scripts need more improvement. You can contribute to make it more efficient.
