@@ -20,6 +20,7 @@
 * pip3
 * curl
 * wget
+
 OS = Ubuntu 18
 
 
