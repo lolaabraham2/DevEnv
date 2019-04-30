@@ -1,5 +1,5 @@
 # Automation-Devops-King
-* A vagrant project with an ubuntu box with the tools needed to do DevOps
+* Ubuntu box with the tools needed for DevOps Engineers
 
 # tools included
 * Terraform 11.11
@@ -24,4 +24,3 @@
 OS = Ubuntu 18
 
 
-# This scripts need more improvement. You can contribute to make it more efficient.
