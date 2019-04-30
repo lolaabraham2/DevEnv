@@ -10,11 +10,17 @@
 * Python3X
 * Kubectl
 * Python 2 X
-* Pythoon3X
+* Python3X
 * Botocore
 * Development tools
-* CLI tools
-* VirtualEnvironment
+* CLI tool
+* free
+* Linuxlogo
+* figlet
+* neofetch
+* pip3
+* curl
+* wget
 
 
 # This scripts need more improvement. You can contribute to make it more efficient.
