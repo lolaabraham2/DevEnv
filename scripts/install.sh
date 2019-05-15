@@ -91,11 +91,11 @@ sudo apt-get -y install toilet && sudo apt-get -y install figlet
 sudo apt-get -y install tree
 
 # Install vscode
-sudo apt update -y
+sudo apt-get update -y
 sudo apt install software-properties-common apt-transport-https wget
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt update -y && sudo apt install -y code
+sudo apt-get update -y && sudo apt install -y code
 
 sudo echo 'echo "ROME WELCOME YOU TO THE WORLD OF DEVOPS"' >> ~/.bashrc
 
